@@ -1,0 +1,104 @@
+.player1_name{
+    float: left;
+    margin-left: 20px;
+}
+.player2_name{
+    float: right;
+    margin-right: 20px;
+}
+.players_name,.first_row{
+    width: 777px;
+    margin: 0 auto;
+}
+.table_container{
+    width: 555px;
+    margin: 0 auto;
+    margin-top: 85px;
+}
+.first_row{
+    text-align: center;
+}
+.player1_name h2, .player2_name h2{
+    display: inline-block;
+}
+.player1_name .circle_top, .player2_name .circle_top{
+    height: 33px;
+    width: 33px;
+    margin-left: 14px;
+    display: inline-block;
+    border-radius: 100px;
+    box-shadow: 1px 1px 4px 0px rgb(107, 107, 107);
+    vertical-align: text-bottom;
+}
+.player1_name .circle_top{
+    background-color: #ffd12a;
+}
+.player2_name .circle_top{
+    background-color: #ec2424;
+}
+.modal-body label{
+    width: 180px;
+}
+.main_board{
+    width: 100%;
+    background-color: #001bde;
+    box-shadow: 1px 0px 20px 2px rgb(107, 107, 107);
+}
+.main_board td{   
+    width: calc(100% / 7);
+}
+body{
+    background-color: #e2e0dd;
+}
+.coin{
+    border-radius: 50px;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #e2e0dd;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: inset 1px 1px 4px 0px rgb(0, 0, 0);
+}
+.pointer{
+    cursor: pointer;
+}
+.down_a{
+    margin-top: 22px;
+    font-size: 23px;
+    color: #22c722;
+    display: none;
+}
+.red{
+    background-color: #ec2424 !important;
+}
+.red i, .yellow i{
+    display: none !important;
+}
+.yellow{
+    background-color: #ffd12a !important;
+}
+.relative{
+    position: relative;
+}
+.play_now{
+    position: absolute;
+    left: 57px;
+    top: -25px;
+    font-size: 35px;
+    color: #1b8e07;
+    display: none;
+}
+#winner_modal .modal-body{
+    text-align: center;
+}
+.winner_circle{
+    width: 50px;
+    height: 50px;
+    background-color: #ffd12a;
+    margin: 0 auto;
+    border-radius: 50px;
+    box-shadow: 1px 1px 4px 0px rgb(107, 107, 107);
+}
+.first_row button{
+    margin: 5px 10px;
+}
