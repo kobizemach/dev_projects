@@ -1,0 +1,8 @@
+<div class='wellcom_div'>
+    <h1>Hello {{name}}</h1>
+    <form>
+        <label>Please insert your name:</label>
+        <input type='text' class="form-control" #Name required/>
+        <button type='button' class='btn btn-primary wellcom_btn_sub' (click)="nameCheck(Name.value)">Submit</button>
+    </form>
+</div>

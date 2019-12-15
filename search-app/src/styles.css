@@ -1,0 +1,154 @@
+h1 {
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+}
+.book{
+    background-color: #92bddc;
+    width: 306px;
+    padding: 20px;
+    margin: 10px;
+    height: 250px;
+    float: left;
+    font-size: 11px;
+    box-shadow: 1px 1px 2px 1px #383838;
+}
+.relative{
+    position: relative;
+}
+.book_img{
+    width: 85px;
+    height: 120px;
+}
+.book_title, .book_title_large{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.book_img_large{
+    margin-top: 10px;
+    box-shadow: 1px 1px 2px 1px #888888;
+    max-height: 180px;
+}
+.pointer{
+    cursor: pointer;
+}
+.wishlist_con{
+    background-color: #fffbf4;
+    margin-top: 43px;
+    min-height: 1330px;
+    box-shadow: 1px 1px 2px 1px #383838;
+}
+.search_div{
+    width: 240px;
+    margin: 0 auto;
+    text-align: center;
+}
+.search_div input{
+    width: 100%;
+}
+.wellcom{
+    font-size: 15px;
+    margin-left: 20px;
+}
+html, body { 
+    height: 100%;
+}
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.btn-primary {
+    background-color: #096e85;
+    border-color: #096e85;
+    box-shadow: 1px 1px 2px 1px #383838;
+    border-radius: 1px;
+}
+.btn-prev{
+    margin-left: 24px;
+    margin-right: 10px;
+}
+.first_row{
+    margin: 20px 0px;
+}
+.btn-close{
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    box-shadow: 1px 1px 2px 1px #888888;
+}
+.max-height{
+    height: 100%;
+    min-height: 240px;
+}
+button.reg-text {
+    padding: 0px;
+    border-radius: 4px;
+    width: 100%;
+}
+mat-dialog-container{
+    background-color: #fffbf4 !important;
+}
+.justify{
+    text-align: justify;
+}
+.wishlist_title{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 31px;
+    text-decoration: underline;
+}
+.wish_ul{
+    list-style-type: none;
+    margin-top: 15px;
+    padding: 0px 10px;
+}
+.wish_ul li{
+    font-size: 15px;
+    line-height: 2;
+}
+.wellcom_div{
+    text-align: center;
+    margin-top: 200px;
+}
+.wellcom_div input{
+    width: 200px;
+    margin: 0 auto;
+}
+.wellcom_btn_sub{
+    width: 200px;
+    margin-top: 6px;
+}
+
+/*============================================================================================================================================================================================================================*/
+/*============================================================================================================================================================================================================================
+			RESPONSIVE																			RESPONSIVE																					RESPONSIVE
+==============================================================================================================================================================================================================================*/
+/*============================================================================================================================================================================================================================*/
+@media (max-width:768px) {
+    .wishlist_con{
+        min-height: 200px;
+    }
+    .wellcom{
+        text-align: center;
+        margin-left: 0px;
+    }
+    .search_div {
+        width: 100%;
+    }
+    .book{
+        height: unset;
+    }
+    .books_container{
+        padding: 0px;
+    }
+    .max-height{
+        padding: 10px 0px;
+        max-height: 80%;
+    }
+    .max-height div{
+        padding: 10px 0px;
+    }
+    .book_title_large {
+        margin-top: -26px;
+    }
+}

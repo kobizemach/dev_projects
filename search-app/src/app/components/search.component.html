@@ -1,0 +1,42 @@
+<div class='first_row col-md-12 col-sm-12 col-xs-12'>
+    <div class='col-md-3 col-sm-12 col-xs-12'>
+        <h3 class='wellcom'>Wellcom {{this.name}}</h3>
+    </div>
+    <div class='search_div col-md-9 col-sm-12 col-xs-12'>
+        <div><label>Your Search</label></div>
+        <input type='text' name="search" [(ngModel)]="search" (keyup)="searchForBooks()"/>
+    </div>
+</div>
+
+<div class='second_row col-md-12 col-sm-12 col-xs-12'>
+    <div class='books_container col-md-9 col-sm-12 col-xs-12'>        
+        <div class='row'>
+            <button class='btn-prev btn btn-primary' (click)="prevPage()">prev</button>
+            <button class='btn btn-primary' (click)="nextPage()">next</button>
+        </div>
+        <div *ngFor="let book of books" class='book relative pointer col-md-3 col-sm-12 col-xs-12' (click)="openDialog(book.volumeInfo)">
+            <div *ngIf="book.volumeInfo.title" class='col-md-8 col-sm-8  col-xs-8'>
+                <p class='book_title'>{{book.volumeInfo.title}}</p>
+                <p *ngIf='book.volumeInfo.authors'>By: {{book.volumeInfo.authors}}</p>
+                <p *ngIf='book.volumeInfo.categories'>Categories: {{book.volumeInfo.categories}}</p>
+            </div>
+            <div *ngIf="book.volumeInfo.imageLinks" class='col-md-4 col-sm-4  col-xs-4'>
+                <img class='book_img' src="{{book.volumeInfo.imageLinks.thumbnail}}">
+            </div>
+        </div>     
+    </div>
+
+    <div class='wishlist_con col-md-3 col-sm-12 col-xs-12'>
+        <h3 class='wishlist_title'>Wishlist</h3>
+        <ul class='wish_ul'>
+            <li *ngFor="let wish_book of wishlist; let i = index">
+                <div class='col-md-1 col-sm-1 col-xs-1'>
+                    <i (click)="removeFromWishList(i)" class="far fa-trash-alt pointer"></i>
+                </div>
+                <div class='col-md-11 col-sm-11 col-xs-11'>
+                    <p style='display: inline;'>{{wish_book.title}}</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<div class='col-md-12 col-sm-12 relative max-height'>
+    <div class='col-md-9 col-sm-12'>
+        <h3 class='book_title_large'>{{data.title}}</h3>
+        <h4 *ngIf='data.description' class='reg-text'>{{data.subtitle}}</h4>
+        <p *ngIf='data.authors' class='reg-text'>By: {{data.authors}}</p>
+        <p *ngIf='data.publisher' class='reg-text'>Publisher: {{data.publisher}}</p>
+        <p *ngIf='data.publishedDate' class='reg-text'>Published Date: {{data.publishedDate}}</p>
+        <p *ngIf='data.description' class='reg-text justify'>Description: {{data.description}}</p>
+        <button class='reg-text btn btn-primary' [mat-dialog-close]="data"><h5>Add to Wishlist +</h5></button>
+    </div>
+    <div class='col-md-3 col-sm-12'>
+        <img class='book_img_large' src="{{data.imageLinks.thumbnail}}">
+    </div>
+    <div mat-dialog-actions>
+        <button class='btn btn-close' (click)="onNoClick()">Close</button>
+    </div>
+</div>
